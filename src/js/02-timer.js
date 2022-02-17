@@ -1,6 +1,5 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
-import {trimEnd } from 'lodash';
 
 const startButton = document.querySelector("[data-start]");
 const selector = document.querySelector("#datetime-picker");
@@ -27,7 +26,6 @@ const options = {
       return;
     }
     startButton.disabled = false;  
-    
   },
 };
 
@@ -53,9 +51,6 @@ function timer(){
         UiTimer(convertMS(ms));
       }
     }, 1000);
-
-    
-
   }
 
 
